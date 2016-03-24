@@ -11,3 +11,6 @@ Dodałem:
 Deafoult texmaker:
 pdflatex -synctex=1 -interaction=nonstopmode %.tex
 
+ISE
+/home/lukas/Documents/14.7/ISE_DS/ISE/bin/lin64
+zrób link ln /usr/local ?

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-03-11T18:58:38</DateModified>
+  <DateModified>2016-03-24T23:36:39</DateModified>
   <ModuleName>test2</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/luki/Documents/Dokumenty/xilinx/sUART/iseconfig/test2.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/luki/Documents/Dokumenty/xilinx/sUART</ImplementationReportsDirectory>
+  <SavedFilePath>/home/lukas/Documents/MATLAB/SR/Xilinx/sUART/iseconfig/test2.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/lukas/Documents/MATLAB/SR/Xilinx/sUART/</ImplementationReportsDirectory>
   <DateInitialized>2016-03-11T18:28:20</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

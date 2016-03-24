@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module linia_op #(parameter N=2, parameter DELAY=0)(
+module linia_op #(parameter N=2, parameter DELAY=2)(
     input [N-1:0]idata,
     output [N-1:0]odata,
     input clk

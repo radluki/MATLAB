@@ -7,6 +7,7 @@ function g=gradie(x)
  x2 = x(2);
 global zad
 global a
+global rodz_grad
 if rodz_grad == 1
     if zad == 1 || zad == 3
         g = [2*x1; 2*a*x2];
@@ -16,5 +17,6 @@ if rodz_grad == 1
         g = [200*(x2-x1.^2)*(-2*x1) - 2*(1-x1); 200*(x2-x1.^2)];
     end
 else
-    dx = 0.1;
-    g = [ (koszt([x(1)+dx 0])-kosz([x(1), 0]))/dx
+    dx = 1e-5;
+    g = [ (koszt([x1+dx x2])-koszt([x1, x2]))/dx; (koszt([x1 x2+dx])-koszt([x1, x2]))/dx]
+end

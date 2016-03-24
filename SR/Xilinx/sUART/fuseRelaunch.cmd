@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/luki/Documents/Dokumenty/xilinx/sUART/test2_isim_beh.exe" -prj "/home/luki/Documents/Dokumenty/xilinx/sUART/test2_beh.prj" "work.test2" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/lukas/Documents/MATLAB/SR/Xilinx/sUART/test2_isim_beh.exe" -prj "/home/lukas/Documents/MATLAB/SR/Xilinx/sUART/test2_beh.prj" "work.test2" "work.glbl" 

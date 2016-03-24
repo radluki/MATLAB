@@ -11,18 +11,20 @@
 %             d - kierunek poszukiwania
 %             czod - cz�sto�� odnowy.
 
-maxit=2000;
-x0=[-2;3];
-e0=1e-8;
+% maxit=200;
+% x0=[-2;3];
+% e0=1e-8;
+% par = 0
+% global a
+% global zad
+% global rodz_grad
+% rodz_grad=0;
+% zad = 5
+% a = 1
+
 czod=2*length(x0);
 wskaz=0;
-
 punkty = [x0];
-par = 0
-global a
-global zad
-zad = 5
-a = 1
 
 tic
 for i=1:maxit
@@ -54,6 +56,6 @@ for i=1:maxit
    punkty = [punkty x0];
 end  
 czas = toc
-rysuj(punkty)
+rysuj(punkty,par,czas)
 
     

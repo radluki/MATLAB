@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-03-03T18:47:53</DateModified>
+  <DateModified>2016-03-24T23:34:58</DateModified>
   <ModuleName>linia_op</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/lsriw/sr/Radzio_Lukasz/Linia_op/iseconfig/linia_op.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/lsriw/sr/Radzio_Lukasz/Linia_op</ImplementationReportsDirectory>
+  <SavedFilePath>/home/lukas/Documents/MATLAB/SR/Xilinx/Linia_op/iseconfig/linia_op.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/lukas/Documents/MATLAB/SR/Xilinx/Linia_op/</ImplementationReportsDirectory>
   <DateInitialized>2016-03-03T17:20:50</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
