@@ -1,0 +1,9 @@
+Słowniki:
+/usr/share/myspell/dicts
+
+Texmaker - polskie znaki:
+TeX Live Additional fonts
+TeX Live: Polish
+
+
+
