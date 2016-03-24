@@ -5,5 +5,9 @@ Texmaker - polskie znaki:
 TeX Live Additional fonts
 TeX Live: Polish
 
+Dodałem:
+/usr/share - mcode.sty
 
+Deafoult texmaker:
+pdflatex -synctex=1 -interaction=nonstopmode %.tex
 
