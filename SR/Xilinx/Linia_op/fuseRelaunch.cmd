@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/lsriw/sr/Radzio_Lukasz/Linia_op/tb_linia_op_isim_beh.exe" -prj "/home/lsriw/sr/Radzio_Lukasz/Linia_op/tb_linia_op_beh.prj" "work.tb_linia_op" "work.glbl" 
