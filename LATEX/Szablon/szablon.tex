@@ -69,12 +69,21 @@ Tralalala
 	\end{verbatim}
 	
 	 \begin{lstlisting}[language=matlab]
-	 for i=1:3
-	 	a=3+i;
-	 end
-	 a = 1; % MATLAB comment 
-	 b = 2; 
-	 c = a^2 + b^2; 		     
+% testy
+maxit=200;
+e0=1e-3;
+par = 0
+global a
+global zad
+global rodz_grad
+rodz_grad=1;
+zad = 5
+a = 10
+for i=0:3
+    x0=[2;3];
+    par = i;
+    granad; 
+end		     
 	 \end{lstlisting}
 	
 	\lstinputlisting[language=matlab]{apropa.m}

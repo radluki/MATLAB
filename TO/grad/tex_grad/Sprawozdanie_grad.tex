@@ -1,0 +1,106 @@
+\documentclass[11pt,a4paper]{article}
+
+% Paczki
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{float} 
+\usepackage{graphicx}
+
+
+% Nagłówek
+\author{Łukasz Radzio}
+\title{Sprawozdanie 3.\\ Metody gradientowe }
+\date{Wtorek 8.00\\22.03.2016}
+
+\begin{document}
+\maketitle
+\section{Wstęp}
+W trakcie ćwiczenia porównałem metodę najszybszego spadku do metod gradientu sprzężonego.
+\subsection{Kod}
+
+\begin{lstlisting}[language=matlab]
+% testy
+maxit=200;
+e0=1e-3;
+par = 0
+global a
+global zad
+global rodz_grad
+rodz_grad=1;
+zad = 5
+a = 10
+for i=0:3
+    x0=[2;3];
+    par = i;
+    granad; 
+end		     
+	 \end{lstlisting}
+
+\subsection{Obserwacje}
+\subsubsection{Funkcja kwadratowa}
+ Między metodami 1,2,3 nie było różnicy w przebiegu. Wzory wyznaczały
+ dokładnie te same kierunki. Jest to zgodne z rozumowaniem przeprowadzonym
+ w książce Metody optymalizacji z ćwiczeniami lab. rozdz. 3.4.2
+ Czas znalezienia rozwiązania najmniejszy był dla metody 1. Najgorszy dla
+ metody 0, która zamiast 2 iteracji przeprowadziła 5 poszukiwań na
+ kierunku dla a=10 x0=[-2,3].
+
+\subsubsection{Dolina bananowa}
+\begin{lstlisting}[language=matlab]
+ e0=1e-3
+ x0=[-2,3]
+ maxit=200
+ \end{lstlisting}
+ 
+ \begin{table}[H]
+	\centering
+	\caption{Porównanie wyników - gradient analityczny}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		 par & 1 & 2 & 3\\
+		\hline
+		 czas [s] & 0.0047 & 0.0037 & 0.0062\\
+		 \hline
+		 liczba iteracji & 29 & 26 & 21\\
+		 \hline
+		\end{tabular}
+\end{table}
+ \paragraph*{Gradient analityczny}
+ Czas dla metod 1:3 ok. 3 razy krótszy niż dla gradientu numerycznego,
+ liczba iteracji bez zmian.
+ Metoda najszybszego spadku nie znajduje rozwiązania. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=13cm]{rys1.png}
+	\caption{Przykładowy przebieg algorytmu}
+\end{figure} 
+ 
+ \paragraph*{Gradient numeryczny - metoda Eulera}
+ 
+
+\begin{table}[H]
+	\centering
+	\caption{Porównanie wyników - gradient numeryczny}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		 par & 0  & 1 & 2 & 3\\
+		\hline
+		 czas [s] & 0.1 & 0.0154 & 0.0125 & 0.01\\
+		 \hline
+		 liczba iteracji & 180 & 34 & 26 & 21\\
+		 \hline
+		\end{tabular}
+\end{table}
+ Dla metod gradientu sprzężonego z reguły każdy krok daje poprawę 
+ oszacowania wyniku. Odległość od rozwiązania dla metody najszybszego
+ spadku ma charakter skokowy. Niekiedy nawet przez 100 iteracji
+ rozwiązanie może się prawie nic nie poprawić.
+
+\section{Wnioski}
+Metoda najszybszego spadku jest metodą zbieżną, natomiast tempo tej zbieżności może okazać się niesatysfakcjonujące.
+Dużo lepiej pod tym względem sprawują się metody gradientu sprzężonego. Z przeprowadzonych doświadczeń wynika, że błędy numeryczne i numeryczna niedokładność algorytmu mogą przyspieszyć działanie metody najszybszego spadku. Przy zastosowanym przybliżeniu pochodnej (dx = 1e-5), nie zauważyłem żadnych znaczących zmian w przebiegu algorytmu dla m.g.s.. Czas obliczeń wydłużył się gdy pochodne były liczona numerycznie.
+
+
+\end{document}
